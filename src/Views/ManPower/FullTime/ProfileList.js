@@ -6,7 +6,7 @@ import { fullTimeProfile } from 'Commonitem/CommonProfile/Manpower';
 const FullTimeProfileList=()=>{
     return(
        
-     <Profile data={data} title = "fullTime"/>
+     <Profile data={data} title = "fullTime."/>
 
     )
 }
