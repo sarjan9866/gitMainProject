@@ -1,0 +1,132 @@
+@import "./Mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Avenir:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+.flex-row-spacebetween {
+  @include display-flex(row, space-between, center);
+}
+body {
+  font-family: "Avenir" !important;
+}
+.j-c {
+  display: flex;
+  justify-content: center;
+}
+// .ant-btn{
+//   background-color: #40B566 !important;
+//   border-radius: 4px !important;
+//   font-family: 'Avenir';
+// }
+.link__btn .ant-btn-link {
+  color: white !important;
+  border-color: black !important;
+}
+.link__btn.ant-btn:hover,
+.ant-btn:focus {
+  color: white !important;
+}
+.ant-btn-block {
+  background-color: #40b566 !important;
+}
+.componentContainer {
+  background-color: #f0f2f5 !important ;
+  padding: 1rem;
+}
+.footer-containt {
+  background-color: #001529 !important;
+  color: white !important;
+  font-family: "Avenir" !important;
+  padding: 1rem !important;
+}
+/* Carousel */
+.imageSlider__contain {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  // height: 5rem;
+}
+.card-wrapper {
+  min-width: 20vw;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+  transform: scale(0.7);
+  transition: transform 300ms;
+  filter: blur(4px);
+  border-radius: 16px;
+}
+
+.activeCardWrapper {
+  transform: scale(0.9);
+  filter: blur(0px);
+}
+
+.card {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.card .testimonial {
+  padding: 32px 55px;
+  background-color: #0c1724;
+  max-height: 45vh;
+}
+
+.arrow {
+  cursor: pointer;
+  z-index: 10;
+  color: #00a449;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+.arrow:hover {
+  transform: scale(1.2);
+}
+.arrow {
+  transition: color 300ms;
+}
+
+.next {
+  position: absolute;
+  right: -15px;
+  top: 35%;
+}
+.prev {
+  position: absolute;
+  left: 58px;
+  top: 35%;
+}
+//Admin dashboard
+.admin-dashboard_title {
+  text-align: center;
+  font-weight: 1000;
+  margin-top: 2rem;
+  padding: 0 2rem 0 2rem;
+  font-family: "Avenir";
+}
+.sider__icon {
+  font-family: "Avenir";
+}
+
+.ant-menu .ant-menu-inline-collapsed .ant-menu-item-icon,
+.ant-menu.ant-menu-inline-collapsed .anticon {
+  font-size: 30px !important;
+  color: #40b566 !important;
+}
+.ant-menu-item .ant-menu-item-icon,
+.ant-menu-item .anticon {
+  font-size: 30px !important;
+  color: #40b566 !important;
+}
+.profilecard {
+  font-size: small;
+  font: 400;
+}
+.image {
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
