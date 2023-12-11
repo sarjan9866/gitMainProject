@@ -6,6 +6,10 @@ import Loading from 'Commonitem/Loader';
 const DefaultRoute = (props) => {
 
 
+  let AsyncElectricalItemListelectricGoods = Loadable({
+    loader: () => import('Views/Electrical/ElectricGoods/List'),
+    loading: Loading,
+  });
   let AsyncElectricalItemListhouseWiring = Loadable({
     loader: () => import('Views/Electrical/House_Wiring/List'),
     loading: Loading,
@@ -33,8 +37,8 @@ const DefaultRoute = (props) => {
     loader: () => import('Views/Painter/ProfileList'),
     loading: Loading,
   });
-  let AsyncPainterItemListColor = Loadable({
-    loader: () => import('Views/Painter/PainterColor/List'),
+  let AsyncPainterItemListPaintingGoods = Loadable({
+    loader: () => import('Views/Painter/PaintingGoods/List'),
     loading: Loading,
   });
 
@@ -48,6 +52,10 @@ const DefaultRoute = (props) => {
     loading: Loading,
   });
   
+  let AsyncPlumbingGoods = Loadable({
+    loader: () => import('Views/Plumber/PlumbingGoods/List'),
+    loading: Loading,
+  });
   let AsyncPlumbingInHouse = Loadable({
     loader: () => import('Views/Plumber/PlumbingInHouse/List'),
     loading: Loading,
@@ -94,23 +102,28 @@ const DefaultRoute = (props) => {
     loading: Loading,
   });
 
-  let AsyncElectricalItems = Loadable({
-    loader: () => import('Views/Supplier/ElectricItems/List'),
+  let AsyncElectronic = Loadable({
+    loader: () => import('Views/Supplier/Electronic/List'),
     loading: Loading,
   });
 
-  let AsyncpaintingItemsItemList = Loadable({
-    loader: () => import('Views/Supplier/PaintingItems/List'),
+  let AsyncSupplierClothes = Loadable({
+    loader: () => import('Views/Supplier/Clothes/List'),
     loading: Loading,
   });
 
-  let AsyncSupplierCarpenterItems = Loadable({
-    loader: () => import('Views/Supplier/CarpenterItems/List'),
+  let AsyncSupplierBooks = Loadable({
+    loader: () => import('Views/Supplier/Books/List'),
     loading: Loading,
   });
 
-  let AsyncSupplierPlumbingrItems = Loadable({
-    loader: () => import('Views/Supplier/PlumbingItems/List'),
+  let AsyncSupplierCosmetic = Loadable({
+    loader: () => import('Views/Supplier/Cosmetic/List'),
+    loading: Loading,
+  });
+
+  let AsyncSupplierSteels = Loadable({
+    loader: () => import('Views/Supplier/Steel/List'),
     loading: Loading,
   });
 
@@ -149,6 +162,9 @@ const DefaultRoute = (props) => {
   return (
     <DefaultLayout>
       <Switch>
+        <Route  exact path="/electrical/goods"
+         component={AsyncElectricalItemListelectricGoods}/>
+
         <Route  exact path="/electrical/houseWiring"
          component={AsyncElectricalItemListhouseWiring}/>
 
@@ -161,9 +177,14 @@ const DefaultRoute = (props) => {
          component={AsyncElectricalItemListelectrician}/>
 
         <Route  exact path="/painter" component={AsyncPainterItemList}/>
-        <Route  exact path="/painter/color" component={AsyncPainterItemListColor}/>
+        <Route  exact path="/painter/goods" 
+        component={AsyncPainterItemListPaintingGoods}/>
+
         <Route  exact path="/painter/paintingCharge" component={AsyncPainterItemListPaintingCharge}/>
         
+        <Route  
+        exact path="/plumber/goods" 
+        component={AsyncPlumbingGoods}/>
         <Route  
         exact path="/plumber/plumbingInHouse" 
         component={AsyncPlumbingInHouse}/>
@@ -199,17 +220,20 @@ const DefaultRoute = (props) => {
         <Route  exact path="/manPower/partTime"
          component={AsyncManPowerPartTimeProfile}/>
 
-        <Route  exact path="/supplier/electricItems"
-         component={AsyncElectricalItems}/>
+        <Route  exact path="/supplier/electronic"
+         component={AsyncElectronic}/>
 
-        <Route  exact path="/supplier/paintingItems"
-         component={AsyncpaintingItemsItemList}/>
+        <Route  exact path="/supplier/clothes"
+         component={AsyncSupplierClothes}/>
 
-        <Route  exact path="/supplier/plumbingItems"
-         component={AsyncSupplierPlumbingrItems}/>
+        <Route  exact path="/supplier/cosmetic"
+         component={AsyncSupplierCosmetic}/>
 
-        <Route  exact path="/supplier/carpenterItems"
-         component={AsyncSupplierCarpenterItems}/>
+        <Route  exact path="/supplier/books"
+         component={AsyncSupplierBooks}/>
+
+        <Route  exact path="/supplier/steel"
+         component={AsyncSupplierSteels}/>
 
         <Route  exact path="/repair/electricParts"
          component={AsyncRepairElectricParts}/>

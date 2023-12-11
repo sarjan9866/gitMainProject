@@ -1,21 +1,21 @@
 
 
-import color1 from 'assets/images/painter/color/interiorPrimer.jpg';
-import color2 from 'assets/images/painter/color/interiorPaints.jpg';
-import color3 from 'assets/images/painter/color/InteriorPutty.jpg';
-import color4 from 'assets/images/painter/color/InteriorVarnish.jpg';
-import color5 from 'assets/images/painter/color/exteriorPrimer.jpg';
-import color6 from 'assets/images/painter/color/ExteriorPaints.jpg';
-import color7 from 'assets/images/painter/color/saftyTool.jpg';
-import color8 from 'assets/images/painter/color/MetallicPrimer.jpg';
-import color9 from 'assets/images/painter/color/MetallicPaint.jpg';
-import color10 from 'assets/images/painter/color/PaintingTools.jpg';
-import color11 from 'assets/images/painter/color/SurfaceEnamel.jpg';
-import color12 from 'assets/images/painter/color/WallPutty.jpg';
-import color13 from 'assets/images/painter/color/InteriorExterior.jpg';
-import color14 from 'assets/images/painter/color/Distemper.jpg';
-import color15 from 'assets/images/painter/color/Enamel.jpg';
-import color16 from 'assets/images/painter/color/Brush.jpg';
+import PaintingGoods1 from 'assets/images/painter/PaintingGoods/interiorPrimer.jpg';
+import PaintingGoods2 from 'assets/images/painter/PaintingGoods/interiorPaints.jpg';
+import PaintingGoods3 from 'assets/images/painter/PaintingGoods/InteriorPutty.jpg';
+import PaintingGoods4 from 'assets/images/painter/PaintingGoods/InteriorVarnish.jpg';
+import PaintingGoods5 from 'assets/images/painter/PaintingGoods/exteriorPrimer.jpg';
+import PaintingGoods6 from 'assets/images/painter/PaintingGoods/ExteriorPaints.jpg';
+import PaintingGoods7 from 'assets/images/painter/PaintingGoods/saftyTool.jpg';
+import PaintingGoods8 from 'assets/images/painter/PaintingGoods/MetallicPrimer.jpg';
+import PaintingGoods9 from 'assets/images/painter/PaintingGoods/MetallicPaint.jpg';
+import PaintingGoods10 from 'assets/images/painter/PaintingGoods/PaintingTools.jpg';
+import PaintingGoods11 from 'assets/images/painter/PaintingGoods/SurfaceEnamel.jpg';
+import PaintingGoods12 from 'assets/images/painter/PaintingGoods/WallPutty.jpg';
+import PaintingGoods13 from 'assets/images/painter/PaintingGoods/InteriorExterior.jpg';
+import PaintingGoods14 from 'assets/images/painter/PaintingGoods/Distemper.jpg';
+import PaintingGoods15 from 'assets/images/painter/PaintingGoods/Enamel.jpg';
+import PaintingGoods16 from 'assets/images/painter/PaintingGoods/Brush.jpg';
 
 import charge1 from 'assets/images/painter/paintingCharge/cleanWall.jpg';
 import charge2 from 'assets/images/painter/paintingCharge/WallPrimer.jpg';
@@ -31,8 +31,8 @@ import charge11 from 'assets/images/painter/paintingCharge/Linecare.jpg';
 import charge12 from 'assets/images/painter/paintingCharge/ExteriorPaint.jpg';
 
 
-export const  CommonPainterColor=[ 
-    {icon:color1,
+export const  CommonPaintingGoods=[ 
+    {icon:PaintingGoods1,
      id:'1',
      price:'120 to 5000',
      name:'Interior Primer',
@@ -40,7 +40,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color2,
+    {icon:PaintingGoods2,
      id:'2',
      price:'120 to 5000',
      name:'Interior Paint',
@@ -48,7 +48,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color3,
+    {icon:PaintingGoods3,
      id:'3',
      price:'120 to 5000',
      name:'Interior Putty',
@@ -56,7 +56,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color4,
+    {icon:PaintingGoods4,
      id:'4',
      price:'120 to 5000',
      name:'Interior Varnish',
@@ -64,7 +64,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color5,
+    {icon:PaintingGoods5,
      id:'5',
      price:'120 to 5000',
      name:'Exterior Primer',
@@ -72,7 +72,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color6,
+    {icon:PaintingGoods6,
      id:'',
      price:'120 to 5000',
      name:'Exterior Paint',
@@ -80,7 +80,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color7,
+    {icon:PaintingGoods7,
      id:'7',
      price:'120 to 5000',
      name:'Safty Tools ',
@@ -88,7 +88,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color8,
+    {icon:PaintingGoods8,
      id:'2',
      price:'120 to 5000',
      name:'Metallic Primer',
@@ -96,7 +96,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color9,
+    {icon:PaintingGoods9,
      id:'2',
      price:'120 to 5000',
      name:'Metallic Paint ',
@@ -104,7 +104,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color10,
+    {icon:PaintingGoods10,
      id:'2',
      price:'120 to 5000',
      name:'Painting Tools',
@@ -112,7 +112,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color11,
+    {icon:PaintingGoods11,
      id:'2',
      price:'120 to 5000',
      name:'Surface Enamel',
@@ -120,7 +120,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color12,
+    {icon:PaintingGoods12,
      id:'2',
      price:'120 to 5000',
      name:'Wall Putty',
@@ -128,7 +128,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color13,
+    {icon:PaintingGoods13,
      id:'2',
      price:'120 to 5000',
      name:'Interior Exterior paint',
@@ -136,7 +136,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color14,
+    {icon:PaintingGoods14,
      id:'2',
      price:'120 to 5000',
      name:'Distemper',
@@ -144,7 +144,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color15,
+    {icon:PaintingGoods15,
      id:'2',
      price:'120 to 5000',
      name:' Enamel',
@@ -152,7 +152,7 @@ export const  CommonPainterColor=[
      address:'lalitpur',
      discount:'20'
     },
-    {icon:color16,
+    {icon:PaintingGoods16,
      id:'2',
      price:'120 to 5000',
      name:'Brush',

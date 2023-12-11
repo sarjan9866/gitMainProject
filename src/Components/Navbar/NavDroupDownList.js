@@ -5,6 +5,10 @@ import { LogoutOutlined,LoginOutlined} from '@ant-design/icons';
 
 
 export const  servicesmenu = ()=>{
+
+    const handelElectricGoods=()=>{
+        history.push('/electrical/goods')
+   }
     const handelHouseWiring=()=>{
          history.push(`/electrical/housewiring`)
     }
@@ -21,6 +25,10 @@ export const  servicesmenu = ()=>{
 
     return(
         <Menu>
+             <Menu.Item key="0">
+            <p onClick={handelElectricGoods}>ElectricGoods</p>
+            </Menu.Item>
+
             <Menu.Item key="1">
                 <p onClick={handelHouseWiring}>HouseWiring</p>
             </Menu.Item>
@@ -40,8 +48,8 @@ export const  servicesmenu = ()=>{
     )
 }
 export const  painterMenu = ()=>{
-    const handleColor=()=>{
-         history.push('/painter/color')
+    const handleGoods=()=>{
+         history.push('/painter/goods')
     }
     const handlePainter=()=>{
          history.push('/painter')
@@ -52,7 +60,7 @@ export const  painterMenu = ()=>{
     return(
         <Menu>
             <Menu.Item key="1">
-                <p onClick={handleColor}>Color</p>
+                <p onClick={handleGoods}>Painting_Goods</p>
             </Menu.Item>
             <Menu.Item key="2">
             <p onClick = {handlePaintingCharge}>Painting_Charge</p>
@@ -64,9 +72,12 @@ export const  painterMenu = ()=>{
     )
 }
 export const  plumber = ()=>{
-    const handelElectronicItem=()=>{
-         history.push(`electronic/item`)
+    // const handelElectronicItem=()=>{
+    //      history.push(`electronic/item`)
  
+    // }
+    const handlePlumbingGoods=()=>{
+        history.push(`/plumber/goods`)
     }
     const handlePlumber=()=>{
         history.push(`/plumber/profile`)
@@ -85,6 +96,9 @@ const handelPlumbingInHouse=()=>{
 
     return(
         <Menu>
+            <Menu.Item key="0">
+                <p onClick={handlePlumbingGoods}>plumbing-Items</p>
+            </Menu.Item>
             <Menu.Item key="1">
                 <p onClick={handelPlumbingInHouse}>plumbing-in-house</p>
             </Menu.Item>
@@ -167,36 +181,41 @@ export const  manPower = ()=>{
 
    
 export const  suppliresmenu = ()=>{
-    const handelElectronicItem=()=>{
-         history.push(`/supplier/electricItems`)
+    const handelElectronic=()=>{
+         history.push(`/supplier/electronic`)
     }
-    const handelPaintingItems=()=>{
-         history.push(`/supplier/paintingItems`)
+    const handelClothes=()=>{
+         history.push(`/supplier/Clothes`)
     }
-    const handelPlumbingItems=()=>{
-         history.push(`/supplier/plumbingItems`)
+    const handelCosmetic=()=>{
+         history.push(`/supplier/Cosmetic`)
     }
-    const handelSupplierCarpenterItems=()=>{
-         history.push(`/supplier/carpenterItems`)
+    const handelBooks=()=>{
+         history.push(`/supplier/Books`)
+    }
+    const handelSupplierSteelItems=()=>{
+         history.push(`/supplier/Steel`)
     }
     
     
     return(
         <Menu>
             <Menu.Item key="1">
-                <p onClick={handelElectronicItem}>Electric-Items</p>
+                <p onClick={handelElectronic}>Electronic-Items</p>
             </Menu.Item>
-            {/* <Menu.Item key="2">
-            <p>Electric-Items</p>
-            </Menu.Item> */}
+            
             <Menu.Item key="3">
-            <p onClick={handelPaintingItems}>Painting-Items</p>
+            <p onClick={handelClothes}>Clothes-Items</p>
             </Menu.Item>
             <Menu.Item key="4">
-            <p onClick={handelPlumbingItems}>Pluming-Items</p>
+            <p onClick={handelCosmetic}>Cosmetic-Items</p>
             </Menu.Item>
             <Menu.Item key="5">
-            <p onClick={handelSupplierCarpenterItems}>carpenter_Items</p>
+            <p onClick={handelBooks}>Books_Items</p>
+            </Menu.Item>
+
+            <Menu.Item key="6">
+            <p onClick={handelSupplierSteelItems}>Steel_Items</p>
             </Menu.Item>
             
             
