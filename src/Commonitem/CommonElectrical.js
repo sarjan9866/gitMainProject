@@ -216,7 +216,7 @@ export const  CommonElectricGoods=[
     },
     {icon:elecGoods21,
      id:'1',
-     price:'1000 to 4800',
+     price:'2000 to 4800',
      name:'All wire',
      rate:'12 to 32',
      address:'lalitpur ',
